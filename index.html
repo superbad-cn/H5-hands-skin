@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content=""/>
+    <meta name="revised" content="" />
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, target-densityDpi=device-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <title>H5</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        var viewport = document.querySelector("meta[name=viewport]");
+        var winWidths=$(window).width();
+        var densityDpi=750/winWidths;
+        densityDpi= densityDpi>1?300*750*densityDpi/750:densityDpi;
+        viewport.setAttribute('content', 'width=750, user-scalable=no, target-densityDpi='+densityDpi);
+    </script>
+</head>
+<body>
+    <div class="wrap"></div>
+</body>
+</html>
